@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Work+Sans:wght@500&display=swap');
+
+*{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.bg{
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    opacity: .4;
+    z-index: 2;
+    display: none;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product .image{
+    position: relative;
+    height: 200px;
+    z-index: 1;
+}
+.product .image img{
+    max-width: 80%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%);
+}
+.product .description{
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 60px 20px 20px;
+    position: relative;
+    margin-top: 35px;
+}
+
+.product .favorite{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+.product .product-title{
+    margin-bottom: 20px;
+}
+.product .detail{
+    display: flex;
+}
+.product .detail div{
+    width: 50%;
+}
+.product .to-cart{
+    text-align: right;
+}
+
+.title{
+    color: #003566;
+    font-weight: 500;
+}
+.subtitle{
+    color: #001d3d;
+    font-size: 1em;
+}
+.favorite{
+    color: #ff2d7e;
+}
+.price{
+    font-size: 1.0em;
+    color: #000814;
+    font-weight: 800;
+}
+.btn-add{
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    color: #fff;
+    background-color: #003566;
+    font-weight: 500;
+}
+
+.full-product{
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 40px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+}
