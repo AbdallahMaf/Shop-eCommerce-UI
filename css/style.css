@@ -25,7 +25,10 @@ a{
     display: flex;
     flex-wrap: wrap;
 }
-
+.product{
+    width: 24%;
+    margin: 10px .5% 30px;
+}
 .product .image{
     position: relative;
     height: 200px;
@@ -91,6 +94,9 @@ a{
     font-weight: 500;
 }
 
+
+
+
 .full-product{
     position: absolute;
     z-index: 2;
@@ -99,6 +105,66 @@ a{
     border-radius: 10px;
     padding: 40px;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, 50%);
+    top: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.full-product .image img{
+    max-width: 100%;
+}
+
+.info,
+.appreciation,
+.cart{
+    display: flex;
+}
+.info div,
+.appreciation div,
+.cart div{
+    width: 50%;
+}
+
+.full-product .description,
+.full-product .review,
+.full-product .favorite{
+    text-align: center;
+}
+.full-product h2{
+    margin: 10px 0;
+}
+.full-product .more-info{
+    padding: 20px 0;
+}
+.full-product .yellow{
+    color: #ffba39;
+}
+.full-product .gray{
+    color: #dbdbdb;
+}
+
+
+
+.transition{
+    transition: all 200ms ease-in;
+}
+.product:hover .image{
+    transform: scale(1.1) rotate(-5deg);
+}
+.product:hover .description{
+    background-color: #efe1ff;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    .contrainer{
+        display: block;
+        padding: 10px 20px;
+    }
+    .contrainer > div{
+        width: 100%;
+    }
+    .product .image img{
+        max-width: 70%;
+    }
 }
