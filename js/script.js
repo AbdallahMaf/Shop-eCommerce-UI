@@ -13,7 +13,7 @@ document.querySelectorAll(".product-link").forEach(item =>{
 })
 
 document.addEventListener("keydown", function(event){
-    if(event.key === "Escape"){
+    if(event.key === "Alt"){
         bg[0].style.display = "none";
     
         document.querySelectorAll(".full-product ").forEach(productFull =>{
